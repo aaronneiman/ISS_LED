@@ -2,14 +2,14 @@
 
 # ISS LED Tracker
 
-An ESP32 project that lights up an LED whenever the International Space Station passes within 400km of a fixed location. Also displays a running elapsed time counter via Serial.
+An ESP32 project that lights up an LED whenever the International Space Station passes within 400km of a fixed location. Also displays a running distance counter and current coordinates via Serial.
 
 ## What It Does
 
 - Fetches the ISS's current latitude and longitude every 30 seconds from the [Where the ISS At?](https://wheretheiss.at/w/developer) API
 - Calculates the great-circle distance between the ISS and a fixed reference point using the Haversine formula
 - Turns on an LED when the ISS is within 400km of that point
-- Prints current ISS coordinates, distance, and elapsed time since a fixed date to the Serial Monitor
+- Prints current ISS coordinates and distance
 
 ## Hardware Required
 
